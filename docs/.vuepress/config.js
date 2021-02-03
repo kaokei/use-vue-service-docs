@@ -1,22 +1,30 @@
-module.exports = {
+const getConfig = require("vuepress-bar");
+const { config } = require("vuepress-theme-hope");
+
+const { nav, sidebar } = getConfig();
+
+const newNav = [...nav, {
+  text: 'Github',
+  link: 'https://github.com/use-service/use-vue-service'
+}]
+
+// console.log('JSON.stringify(newNav, null, 4) :>> ', JSON.stringify(newNav, null, 4));
+
+module.exports = config({
   lang: "zh-CN",
-  title: "你好， VuePress ！123",
+  title: "use-vue-service",
   description: "这是我的第一个 VuePress 站点",
 
   base: "/",
 
   markdown: {
-    lineNumbers: false, // 代码块显示行号
+    lineNumbers: false // 代码块显示行号
   },
 
   themeConfig: {
-    logo: "https://vuejs.org/images/logo.png",
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "External", link: "https://google.com" },
-    ],
-    sidebar: "auto", // 侧边栏配置
-    sidebarDepth: 2, // 侧边栏显示2级
-  },
-};
+    logo: 'logo.svg',
+    nav: newNav,
+    sidebar,
+    hostname: 'localhost',
+  }
+});
