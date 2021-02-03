@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.0",
+    "vuepress-bar": "^0.3.4",
+    "vuepress-theme-hope": "^1.9.3"
   }
 }
