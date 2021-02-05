@@ -1,12 +1,17 @@
 const getConfig = require("vuepress-bar");
 const { config } = require("vuepress-theme-hope");
 
-const { nav, sidebar } = getConfig();
+const { nav, sidebar } = getConfig({
+  addReadMeToFirstGroup: false
+});
 
-const newNav = [...nav, {
-  text: 'Github',
-  link: 'https://github.com/use-service/use-vue-service'
-}]
+const newNav = [
+  ...nav,
+  {
+    text: "Github",
+    link: "https://github.com/use-service/use-vue-service"
+  }
+];
 
 // console.log('JSON.stringify(newNav, null, 4) :>> ', JSON.stringify(newNav, null, 4));
 
@@ -22,9 +27,9 @@ module.exports = config({
   },
 
   themeConfig: {
-    logo: 'logo.svg',
+    logo: "/logo.svg",
     nav: newNav,
     sidebar,
-    hostname: 'localhost',
+    hostname: "localhost"
   }
 });
