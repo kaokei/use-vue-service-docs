@@ -5,6 +5,9 @@ const { nav, sidebar } = getConfig({
   addReadMeToFirstGroup: false
 });
 
+nav.find(item => item.text === "Api").text = "API";
+nav.find(item => item.text === "Fqa").text = "FQA";
+
 const newNav = [
   ...nav,
   {
