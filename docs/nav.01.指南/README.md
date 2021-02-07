@@ -73,6 +73,6 @@ const someService = useService(SomeService);
 
 ## 注意
 
-虽然 vue 官网比较推荐使用 vite，但是暂时还不能使用 vite 搭建项目。
+虽然 vue 官网比较推荐使用 vite 搭建项目，但是这里暂时还不能使用 vite 搭建项目。
 
 因为 vite 使用的是 esbuild 而不是 tsc 编译 ts 代码。而 esbuild 暂时还不支持装饰器特性，本库最大的特点就是依赖注入，它是通过装饰器来实现的。
