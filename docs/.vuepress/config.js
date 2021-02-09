@@ -5,8 +5,19 @@ const { nav, sidebar } = getConfig({
   addReadMeToFirstGroup: false
 });
 
-nav.find(item => item.text === "Api").text = "API";
-nav.find(item => item.text === "Fqa").text = "FQA";
+const NAV_TEXT_CONFIG = {
+  Api: "API",
+  Fqa: "Fqa",
+  Guide: "指南",
+  Articles: "其他文章"
+};
+
+nav.forEach(item => {
+  const text = item.text;
+  if (NAV_TEXT_CONFIG[text]) {
+    item.text = NAV_TEXT_CONFIG[text];
+  }
+});
 
 const newNav = [
   ...nav,
