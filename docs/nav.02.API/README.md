@@ -36,7 +36,13 @@ title: API 文档
 
 关于 declareProviders 和 useService 则是特意给 Option 组件实现的 api。因为在 Option 组件中不能使用@Inject 的方式来注入服务。只能手动调用 useService 来获取服务实例。实际上@Inject 的背后也是调用的 useService 函数。
 
-关于 Component 这个 api 则是特意给类组件用的。它有三个作用，第一个作用是对 vue-class-component@8.x 中的`@Options`的封装；第二个作用是通过参数 providers 实现了 declareProviders 函数的功能；第三个作用是实现了类组件具有依赖注入的能力。@Component 可以看作是@Options、declareProviders 和@Injectable 的结合体。
+关于 Component 这个 api 则是特意给类组件用的。它有三个作用：
+
+- 第一个作用是对 vue-class-component@8.x 中的`@Options`的封装；
+- 第二个作用是通过参数 providers 实现了 declareProviders 函数的功能；
+- 第三个作用是实现了类组件具有依赖注入的能力。注意类组件只能注入别的服务，而不能把类组件当作服务注入。
+
+@Component 可以看作是@Options、declareProviders 和@Injectable 的结合体。
 
 ## Inject 装饰器函数
 
