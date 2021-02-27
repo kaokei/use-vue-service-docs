@@ -7,7 +7,7 @@ const { nav, sidebar } = getConfig({
 
 const NAV_TEXT_CONFIG = {
   Api: "API",
-  Fqa: "Fqa",
+  Fqa: "FQA",
   Guide: "指南",
   Articles: "其他文章"
 };

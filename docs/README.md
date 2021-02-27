@@ -7,7 +7,7 @@ heroText: use-vue-service
 tagline: 基于vue3.x的轻量级依赖注入库
 action:
   - text: 快速上手 💡
-    link: /zh/guide/
+    link: /nav.01.guide/
     type: primary
 
 features:

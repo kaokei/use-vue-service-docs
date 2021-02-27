@@ -3,6 +3,10 @@ author: 三棵树
 title: 指南
 ---
 
+## 简介
+
+本库基于 vue3.x 的 reactive 特性，借鉴了 angular 的 service 的实现机制，在 vue 环境中实现了基于服务的依赖注入，可以替代 vuex 更加方便的管理数据。
+
 ## 快速搭建项目
 
 1. 建议使用`@vue/cli`来初始化项目。
@@ -66,7 +70,7 @@ const someService = useService(SomeService);
 
 ```vue
 <template>
-  <div>{{someService.name}}: {{someService.age}}</div>
+  <div>{{ someService.name }}: {{ someService.age }}</div>
   <button type="button" @click="someService.agePlusOne">年龄+1</button>
 </template>
 ```
