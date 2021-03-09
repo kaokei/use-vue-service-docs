@@ -224,6 +224,10 @@ declareProviders([
   },
   {
     provide: SomeService,
+    useClass: SomeOtherService
+  },
+  {
+    provide: SomeService,
     useValue: someServiceInstance
   },
   {

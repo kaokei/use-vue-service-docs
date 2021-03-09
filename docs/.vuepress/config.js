@@ -7,9 +7,8 @@ const { nav, sidebar } = getConfig({
 
 const NAV_TEXT_CONFIG = {
   Api: "API",
-  Fqa: "FQA",
   Guide: "指南",
-  Articles: "其他文章"
+  Articles: "知识地图"
 };
 
 nav.forEach(item => {
