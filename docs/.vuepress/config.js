@@ -22,7 +22,7 @@ const newNav = [
   ...nav,
   {
     text: "Github",
-    link: "https://github.com/use-service/use-vue-service"
+    link: "https://github.com/kaokei/use-vue-service"
   }
 ];
 
@@ -30,17 +30,17 @@ const newNav = [
 
 module.exports = config({
   lang: "zh-CN",
-  title: "use-vue-service",
+  title: "@kaokei/use-vue-service",
   description: "这是我的第一个 VuePress 站点",
 
   base: "/",
 
   markdown: {
-    lineNumbers: false // 代码块显示行号
+    lineNumbers: true // 代码块显示行号
   },
 
   themeConfig: {
-    logo: "/logo.svg",
+    logo: "/logo.png",
     nav: newNav,
     sidebar,
     hostname: "https://use-vue-service-docs.vercel.app/",

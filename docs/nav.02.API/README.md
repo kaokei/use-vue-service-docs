@@ -47,7 +47,7 @@ title: API 文档
 ## Inject 装饰器函数
 
 ```ts
-import { Injectable } from "use-vue-service";
+import { Injectable } from "@kaokei/use-vue-service";
 import { LoggerService } from "./logger.service.ts";
 
 @Injectable()
@@ -75,7 +75,7 @@ export class CountService {
 ## Skip 装饰器函数
 
 ```ts
-import { Injectable, Skip } from "use-vue-service";
+import { Injectable, Skip } from "@kaokei/use-vue-service";
 import { LoggerService } from "./logger.service.ts";
 
 @Injectable()
@@ -132,7 +132,7 @@ private logger1: LoggerService
 ## Namespace 装饰器函数
 
 ```ts
-import { Injectable, Namespace } from "use-vue-service";
+import { Injectable, Namespace } from "@kaokei/use-vue-service";
 import { LoggerService } from "./logger.service.ts";
 
 @Injectable()
@@ -167,7 +167,7 @@ export class CountService {
 ## Injectable 装饰器函数
 
 ```ts
-import { Injectable } from "use-vue-service";
+import { Injectable } from "@kaokei/use-vue-service";
 
 @Injectable()
 export class LoggerService {

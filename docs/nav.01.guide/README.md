@@ -28,7 +28,7 @@ vue create projectName
 3. 安装 npm 包
 
 ```sh
-npm install -S reflect-metadata use-vue-service
+npm install -S reflect-metadata @kaokei/use-vue-service
 ```
 
 如果还没有安装 vue-class-component
@@ -62,7 +62,7 @@ npm install -S vue-class-component@next
 同时服务已经被`reactive`处理过，vue 模版可以直接渲染服务的状态。当服务的状态变化时，vue 模版也会自动更新。
 
 ```ts
-import { useService } from "use-vue-service";
+import { useService } from "@kaokei/use-vue-service";
 import { SomeService } from "./some.service.ts";
 
 const someService = useService(SomeService);
