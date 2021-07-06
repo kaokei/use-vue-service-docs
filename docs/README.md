@@ -48,4 +48,4 @@ import { SomeService } from "./some.service.ts";
 const someService = useService(SomeService);
 ```
 
-<Vssue title="Vssue Demo" />
+<Vssue title="About use-vue-service library" />

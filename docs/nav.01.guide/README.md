@@ -81,4 +81,4 @@ const someService = useService(SomeService);
 
 因为 vite 使用的是 esbuild 而不是 tsc 编译 ts 代码。而 esbuild 暂时还不支持装饰器特性，本库最大的特点就是依赖注入，它是通过装饰器来实现的。
 
-<Vssue title="Vssue Demo" />
+<Vssue title="指南" />
