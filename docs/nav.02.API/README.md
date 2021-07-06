@@ -266,3 +266,5 @@ const someService = useService(SomeService, {
 ```
 
 我们可以一次获取单个服务的实例对象，也可以一次性获取多个服务的实例对象。而且可以指定第二个参数来控制 useService 的解析过程。
+
+<Vssue title="Vssue Demo" />
