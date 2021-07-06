@@ -45,5 +45,19 @@ module.exports = config({
     sidebar,
     hostname: "https://use-vue-service-docs.vercel.app/",
     anchorDisplay: false
+  },
+
+  plugins: {
+    "@mr-hope/comment": {
+      type: "vssue",
+      // 设置 `platform` 而不是 `api`
+      platform: "github-v4",
+
+      // 其他的 Vssue 配置
+      owner: "kaokei",
+      repo: "use-vue-service-docs",
+      clientId: "e1d9561772cd22d6a237",
+      clientSecret: "d03e252f726275ef9dc92969af6419d02fa2338b"
+    }
   }
 });
