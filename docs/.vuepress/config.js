@@ -47,6 +47,15 @@ module.exports = config({
     anchorDisplay: false
   },
 
+  locales: {
+    "/": {
+      lang: "zh-CN"
+    },
+    "/en": {
+      lang: "en-US"
+    }
+  },
+
   plugins: {
     "@mr-hope/comment": {
       type: "vssue",
