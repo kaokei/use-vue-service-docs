@@ -12,7 +12,7 @@ action:
 
 features:
   - title: 数据管理 🔐
-    details: 通过服务来管理数据，可以代替vuex
+    details: 通过服务来管理数据，可以代替vuex的
 
   - title: 依赖注入 🎨
     details: 通过typescript的decorator实现依赖注入
