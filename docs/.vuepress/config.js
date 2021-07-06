@@ -43,7 +43,7 @@ module.exports = config({
     logo: "/logo.svg",
     nav: newNav,
     sidebar,
-    hostname: "localhost",
+    hostname: "https://use-vue-service-docs.vercel.app/",
     anchorDisplay: false
   }
 });

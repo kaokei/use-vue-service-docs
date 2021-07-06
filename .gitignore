@@ -12,6 +12,7 @@
 /build
 /lib
 /dist
+/docs/.vuepress/dist
 
 # misc
 .DS_Store
