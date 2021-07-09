@@ -244,7 +244,7 @@ declareProviders([
 ]);
 ```
 
-可以一次性定义多个服务的 provider。总共有 5 中形式的 provider。
+可以一次性定义多个服务的 provider。总共有 5 种形式的 provider。
 
 ## useService 函数
 
