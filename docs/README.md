@@ -47,19 +47,3 @@ import { SomeService } from "./some.service.ts";
 
 const someService = useService(SomeService);
 ```
-
-<CodeGroup>
-<CodeGroupItem title="yarn">
-```bash
-yarn add -D vuepress-theme-hope
-```
-</CodeGroupItem>
-
-<CodeGroupItem title="npm">
-```bash
-npm i -D vuepress-theme-hope
-```
-</CodeGroupItem>
-</CodeGroup>
-
-<Vssue title="About use-vue-service library" />
