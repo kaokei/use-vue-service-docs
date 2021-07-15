@@ -29,7 +29,7 @@ features:
   - title: 更多特性 ✨
     details: 更多特性开发中。。。
 
-footer: MIT Licensed | Copyright © 2021-present kaokei
+footer: MIT Licensed | Copyright © 2021-present-1.0.1 kaokei
 copyrightText: false
 ---
 
